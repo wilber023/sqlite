@@ -1,0 +1,143 @@
+.App {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  padding: 20px;
+  gap: 20px;
+}
+
+.container {
+  flex: 1;
+  padding: 25px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  max-width: 50%;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: 600;
+  color: #34495e;
+  margin-top: 10px;
+}
+
+input, textarea {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+textarea {
+  width: 100%;
+  font-family: 'Consolas', 'Monaco', monospace;
+  min-height: 150px;
+  resize: vertical;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.result-section {
+  flex: 1;
+  padding: 25px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  max-width: 50%;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.success {
+  color: #27ae60;
+  background-color: rgba(39, 174, 96, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+  border-left: 4px solid #27ae60;
+  margin-bottom: 20px;
+}
+
+.error {
+  color: #e74c3c;
+  background-color: rgba(231, 76, 60, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+  border-left: 4px solid #e74c3c;
+  margin-bottom: 20px;
+}
+
+.analysis {
+  margin-top: 20px;
+}
+
+.analysis h2 {
+  color: #2c3e50;
+  font-size: 18px;
+  margin: 15px 0 10px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.analysis ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.analysis li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+}
+
+.analysis li:last-child {
+  border-bottom: none;
+}
+
+.analysis li strong {
+  color: #3498db;
+}
+
+.analysis p {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
